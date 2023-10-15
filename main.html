@@ -1,0 +1,65 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+ 
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+ 
+<body>
+        <header onClick="setMainPage()">=^-^=</header>
+		<div class="app-container">
+			<div class="col-1" id="bg">
+				<img src="cover/main-cover.jpg" class="illustration" id="song_cover">
+			</div>
+			<div class="col-2">
+				<div id="app">
+					<div class="main-page" id="main_page">
+						<main class="main-app">
+							<i class="el-icon-headset headset"></i>
+							<h1>Получить музыку по настроению</h1>
+							<div class="buttons">
+								<div class="button-wrapper"><button class="blue-hover-block" onClick="setSong('funny')">Мне весело <img src="icon.gif"></button></div>
+								<div class="button-wrapper"><button class="green-hover-block" onClick="setSong('sad')">Я грущу <img src="icon.gif"></button></div>
+								<div class="button-wrapper"><button class="brown-hover-block" onClick="setSong('thoughtful')">Хочу красивое <img src="icon.gif"></button></div>
+							</div>
+						</main>
+					</div>
+					<div class="main-page song-page hide" id="song_page">
+						<main class="main-app">
+							<h1 id="song_name">SEKAI NO OWARI - RAIN</h1>
+							<p class="song-desc" id="song_description">Привет, мир!</p>
+							<div class="song-app">
+								<div class="song-main">
+									<div class="white-bg"></div>
+									<img src="https://thumb.cloud.mail.ru/thumb/xw1/photo_2023-10-11_11-21-19.jpg" class="cover" id="song_audio_cover">
+									<span class="start-text">Старт</span>
+									<div class="audio-block">
+										<audio controls src="song.mp3" id="audio_player"></audio>
+									</div>
+								</div>
+							</div>
+						</main>
+					</div>
+				</div>
+			</div>
+						<div class="arrow-btn" id="bg_btn" onclick="setBg();"><i class="el-icon-arrow-down"></i></div>
+						<div class="arrow-btn hide" id="audio_btn" onclick="setAudio();"><i class="el-icon-arrow-up"></i></div>
+		</div>
+
+    <div style="display: none;">
+     <img src="https://image.shutterstock.com/image-photo/two-beautiful-cats-love-sitting-600w-1801319449.jpg">
+    </div>
+  <script src="scripts.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</body>
+</html>
